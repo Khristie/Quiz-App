@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family= Abhaya+Libre|Baloo+Thambi+2|EB+Garamond|Galada|Judson|Ibarra+Real+Nova|Lato|Lobster|Martel|Montserrat|Neuton|Noto+Serif|Open+Sans|Oswald|PT+Serif+Caption|Playfair+Display+SC|Roboto|Unna&display=swap');
+ :root {
+    --primary-color: #722f37;
+    --gray-color: #fff;
+    --body-color: #f2f2f2;
+    --main-font: 'Noto Serif';
+    --body-font: 'Judson';
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #ffcba4;
+    height: 50vh;
+    justify-content: center;
+    margin: 10rem;
+}
+
+.home {
+    display: block;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.home h1 {
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 2.6rem;
+    font-family: var(--main-font);
+    font-weight: 500;
+    margin: 0;
+}
+
+#section-b {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    font-family: var(--main-font);
+    color: #fff;
+}
+
+#main-quiz-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--body-font);
+}
+
+.counters {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+}
+
+.quiz-btn {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+button {
+    display: inline-flex;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    background: #fff;
+    color: var(--primary-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    border: 0;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+button:hover {
+    background: #ffcba4;
+    color: #fff;
+}
+
+#section-b>* {
+    padding: 1em;
+}
+
+#section-a {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+#quiz-over {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+#over-text {
+    margin-bottom: 20px;
+}
+
+#try-again {
+    margin-right: 20px;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.options {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: #000;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.options:hover {
+    cursor: pointer;
+    background: #ffcba4;
+    color: #fff;
+}
+
+.correct {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
+    background: green;
+    color: #fff;
+}
+
+.wrong {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
+    background: red;
+    color: #fff;
+}
+
+.disabled {
+    font-size: 1.5rem;
+    padding: 20px;
+    pointer-events: none;
+}
+
+
+@media(max-width:200px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        padding-top: 30rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .home {
+        padding-top: 40rem;
+    }
+    p {
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 2rem;
+    }
+    #section-b {
+        width: 100%;
+    }
+    .btn {
+        padding: 2.7rem 3rem;
+        font-size: 2.7rem;
+    }
+    .options {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+    #quiz-over {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 980px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    #main-quiz-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .home {
+        padding-top: 22rem;
+    }
+    p {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    button {
+        padding: 2.5rem 3rem;
+        font-size: 2.8rem;
+    }
+    .options {
+        font-size: 3.4rem;
+        font-weight: 500;
+    }
+    #quiz-over {
+        margin-top: 40px;
+    }
+}
